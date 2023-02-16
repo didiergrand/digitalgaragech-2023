@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Projet Web 1",
+      "description": "Description du projet web 1",
+      "image": "image3.jpg",
+      "images": [
+        "image3.1.jpg",
+        "image3.2.jpg",
+        "image3.3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Projet Web 2",
+      "description": "Description du projet web 2",
+      "image": "image4.jpg",
+      "images": [
+        "image4.1.jpg",
+        "image4.2.jpg",
+        "image4.3.jpg"
+      ]
+    }
+  ]

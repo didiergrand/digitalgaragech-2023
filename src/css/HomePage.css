@@ -1,0 +1,7 @@
+.home-header{
+    background-image: url(/public/photos/52-1-061122/52-01-06112022-1.jpg);
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    padding: 50px;
+}
