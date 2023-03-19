@@ -1,0 +1,143 @@
+:root{
+  --white: #fff;
+  --black: #000;
+  --dark: #111827;
+  --dark-alternative: #1f2937;
+  --light: #fff;
+  --light-alternative: #e5e7eb;
+  --primary: #eab308;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark);
+    background-color:var(--light);
+}
+html.dark{
+  body{
+    background-color: var(--dark);
+    color: var(--light);
+  }
+}
+header{
+  height: 92px;
+}
+.welcome{
+  min-height: calc(100vh - 92px);
+}
+nav{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main{
+  a:not(.btn){
+    color: var(--primary);
+    text-decoration: none;
+  }
+  a:not(.btn):hover{
+    text-decoration: underline;
+  }
+}
+a.btn{
+  margin: 1rem 0 3rem;
+  display: inline-block;
+}
+#mobileNav{
+  background-color: var(--light);
+  color: var(--dark);
+  letter-spacing: 0.05rem;
+}
+#logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-transform: none;
+}
+hr{
+  border: 0;
+  border-bottom: 1px solid var(--light-alternative);
+}
+html.dark{
+  #mobileNav{
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  #logo{
+    color: var(--light);
+  }
+  hr{
+    border-bottom: 1px solid var(--dark-alternative);
+  }
+}
+h1,h2{
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h4{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.photogallery{
+  margin: -0.5rem;
+}
+.photogallery > div{
+  margin: 0.5rem;
+}
+.photogallery img{
+  height: 100%;
+  width: 100%;
+}
+.portfolioitem img{
+  padding: 50px 50px 0 50px;
+  border-radius: 10px 10px 0 0;
+}
+footer{
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .portfolioitem img{
+    padding: 20px 20px 0 20px;
+  }
+}
+@media screen and (max-width: 768px){
+  h1,h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.25rem;
+  }
+}
+  
+@media screen and (max-width: 576px){
+  #logo{
+    font-size: 1.2rem;
+  }
+  h1,h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.25rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+  
+}
