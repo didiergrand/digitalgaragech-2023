@@ -12,49 +12,49 @@ const PhotoItem = ({ title, horizontalimg, images, date, description, note }) =>
           {horizontalimg  === "right" ? (   
           <div className="photogallery grid grid-cols-1 sm:grid-rows-2 pt-8 sm:grid-cols-2 sm:grid-flow-col">
               <div>
-                  <Image src={images[0]} width={1334} height={2000} alt={title} quality={100} />
+                  <Image src={images[0]} width={666} height={1000} alt={title} unoptimized />
               </div>
               <div>
-                  <Image src={images[2]} width={1334} height={2000} alt={title} quality={100} />
+                  <Image src={images[2]} width={666} height={1000} alt={title} unoptimized />
               </div>
               <div className="row-span-2">
-                  <Image src={images[1]} width={2000} height={1334} alt={title} quality={100} />  {/* grande image */} 
+                  <Image src={images[1]} width={1000} height={666} alt={title} unoptimized />  {/* grande image */} 
               </div>
           </div>
           ) : horizontalimg === "left" ? (
             <div className="photogallery grid grid-cols-1 sm:grid-rows-2 pt-8 sm:grid-cols-2 grid-flow-row">
               <div className="row-span-2">
-                <Image src={images[0]} width={1334} height={2000} alt={title} quality={100} /> {/* grande image */} 
+                <Image src={images[0]} width={666} height={1000} alt={title} unoptimized /> {/* grande image */} 
               </div>
               <div>
-                <Image src={images[1]} width={2000} height={1334} alt={title} quality={100} />
+                <Image src={images[1]} width={1000} height={666} alt={title} unoptimized />
               </div>
               <div>
-                <Image src={images[2]} width={2000} height={1334} alt={title} quality={100} />
+                <Image src={images[2]} width={1000} height={666} alt={title} unoptimized />
               </div>
             </div>
           ) : horizontalimg === "top" ? (
             <div className="photogallery grid grid-cols-1 sm:grid-rows-2 pt-8 sm:grid-cols-2 grid-flow-row">
               <div className="col-span-2">
-                <Image src={images[0]} width={1334} height={2000} alt={title} quality={100} /> {/* grande image */} 
+                <Image src={images[0]} width={666} height={1000} alt={title} unoptimized /> {/* grande image */} 
               </div>
               <div>
-                <Image src={images[1]} width={2000} height={1334} alt={title} quality={100} />
+                <Image src={images[1]} width={1000} height={666} alt={title} unoptimized />
               </div>
               <div>
-                <Image src={images[2]} width={2000} height={1334} alt={title} quality={100} />
+                <Image src={images[2]} width={1000} height={666} alt={title} unoptimized />
               </div>
             </div>
           ) : (
             <div className="photogallery grid grid-cols-3 pt-8">
             <div>
-                <Image src={images[0]} width={1334} height={2000} alt={title} quality={100} />
+                <Image src={images[0]} width={666} height={1000} alt={title} unoptimized />
             </div>
             <div>
-                <Image src={images[2]} width={1334} height={2000} alt={title} quality={100} />
+                <Image src={images[2]} width={666} height={1000} alt={title} unoptimized />
             </div>
             <div>
-                <Image src={images[1]} width={2000} height={1334} alt={title} quality={100} />  {/* grande image */} 
+                <Image src={images[1]} width={1000} height={666} alt={title} unoptimized />  {/* grande image */} 
             </div>
         </div>
           )}
