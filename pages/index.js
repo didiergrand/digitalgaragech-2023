@@ -12,7 +12,6 @@ export default function Home() {
         <Welcome />
         <hr className="mb-12" />
         <LatestWork />
-        <hr className="mb-12" />
         <PhotoGallery />
     </Layout>
   );
