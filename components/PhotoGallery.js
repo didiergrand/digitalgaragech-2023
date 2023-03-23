@@ -21,17 +21,17 @@ const PhotoGallery = () => {
         </div>
         <h3 className="mt-20 sm:mb-10">Dernière publication</h3>
 
+       
         <PhotoItem
           title="Les Alpettes, 5 mars"
-          date="5.03.23"
+          date="18.03.23"
           images={[
-            "https://medias.digitalgarage.ch/photos/52/15/05032023-02-243A7354.jpg",
-            "https://medias.digitalgarage.ch/photos/52/15/05032023-03-243A7362.jpg", // right grande image
-            "https://medias.digitalgarage.ch/photos/52/15/05032023-04-243A7364.jpg",
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-01-243A7432.jpg",
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-02-243A7458.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-03-243A7485.jpg",
           ]}
-          horizontalimg="right"
-          description="Balade vers les Alpettes, ambiance fraiche avec un lever de soleil qui réchauffe doucement l'ambiance."
-          note="15/52 Levers de soleil"
+          description="Le printemps se pointe, apportant avec lui de nouveaux horizons colorés. 🌄 Re-balade vers les Alpettes."
+          note="16/52 Levers de soleil"
         />
       </div>
     </section>
