@@ -31,6 +31,17 @@ const PhotoGallery = () => {
 
         <PhotoItem
           title="Les Alpettes, 5 mars"
+          date="18.03.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-01-243A7432.jpg",
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-02-243A7458.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-03-243A7485.jpg",
+          ]}
+          description="Le printemps se pointe, apportant avec lui de nouveaux horizons colorés. 🌄 Re-balade vers les Alpettes."
+          note="16/52 Levers de soleil"
+        />
+        <PhotoItem
+          title="Les Alpettes, 5 mars"
           date="5.03.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/15/05032023-02-243A7354.jpg",

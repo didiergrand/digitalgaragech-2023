@@ -12,6 +12,7 @@ const PortfolioItem = ({ title, image, bgcolor, link, description }) => {
                   style={{ backgroundColor: bgcolor }}
                   width={1333}
                   height={2000}
+                  unoptimized
                 />
             </div>
             <div className="sm:col-start-7 lg:col-start-8 col-end-12">
