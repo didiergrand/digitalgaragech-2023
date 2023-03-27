@@ -24,22 +24,29 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
 </div></div>
         <h3 className="mt-20 sm:mb-10">Dernières réalisations</h3>
       </section>
-      {/* <PortfolioItem
+      <PortfolioItem
         title="Commune de St-Martin"
         image="https://medias.digitalgarage.ch/sites/saint-martin-fr-ch.jpg"
         bgcolor="#81A1B7"
-        link="https://www.saintt-martin-fr.ch/"
-        description="Bienvenue sur le site de la commune de Saint-Martin FR, un village accueillant situé au cœur de la magnifique région de la Veveyse. En tant qu’habitant de la commune, j’ai eu le plaisir de travailler sur cette nouvelle version du site web en mettant mon expertise à disposition de ce charmant village pour créer un site internet à son image. Grâce à une navigation simple et intuitive, vous pourrez facilement trouver toutes les informations pratiques dont vous avez besoin : horaires de l’administration, informations administratives et services, agenda des manifestations, etc. De plus, une section dédiée aux actualités et une section “pilier public” vous permettront de rester informé(e) de tout ce qui se passe à Saint-Martin FR. <br />
+        link="https://www.saint-martin-fr.ch/"
+        description="Bienvenue sur le site de la commune de Saint-Martin FR, un village accueillant situé au cœur de la magnifique région de la Veveyse. <br /><br />En tant qu’habitant de la commune, j’ai eu le plaisir de travailler sur cette nouvelle version du site web en mettant mon expertise à disposition de ce charmant village pour créer un site internet à son image. Grâce à une navigation simple et intuitive, vous pourrez facilement trouver toutes les informations pratiques dont vous avez besoin : horaires de l’administration, informations administratives et services, agenda des manifestations, etc. <br /><br />De plus, une section dédiée aux actualités et une section “pilier public” vous permettront de rester informé(e) de tout ce qui se passe à Saint-Martin FR. <br /><br />
         J’espère que mon travail vous aidera à trouver toutes les informations que vous recherchez."
       />
-      <hr /> */}
       <PortfolioItem
         title="Comptoir de la Veveyse"
         image="https://medias.digitalgarage.ch/sites/comptoir-veveyse-ch.jpg"
         bgcolor="#E8ECEF"
         link="https://comptoirveveyse.ch/"
         description="J’ai le plaisir de réaliser ce site internet depuis la première édition du Comptoir de la Veveyse.
-        <br /> En tant que web designer passionné par la mise en valeur des projets locaux, j’ai mis mon expertise au service de cette manifestation qui valorise l'économie de la Veveyse, son artisanat et ses produits du terroir.  <br /> <br /> J’ai donc travaillé avec les organisateurs pour créer un site à la hauteur de l'événement : un site dynamique, clair et facile d’utilisation qui met en avant les exposants, les animations et les temps forts du Comptoir. <br /> <br /> Je suis fier de contribuer à la promotion de chaque édition de ce rendez-vous incontournable de la région, et j’espère que mon travail continuera à aider à faire rayonner le Comptoir de la Veveyse."
+        <br /> En tant que web designer passionné par la mise en valeur des projets locaux, j’ai mis mon expertise au service de cette manifestation qui valorise l'économie de la Veveyse, son artisanat et ses produits du terroir.  <br /> <br /> J’ai donc travaillé avec les organisateurs pour créer un site à la hauteur de l'événement : un site dynamique, clair et facile d’utilisation qui met en avant les exposants, les animations et les temps forts du Comptoir. <br /> <br /> Je suis honoré de contribuer à la promotion de chaque édition de ce rendez-vous incontournable de la région, et j’espère que mon travail continuera à aider à faire rayonner le Comptoir de la Veveyse."
+      />
+      <PortfolioItem
+        title="ARBRacadabrant"
+        image="https://medias.digitalgarage.ch/sites/semsales2020-ch.jpg"
+        bgcolor="#B1CE02"
+        link="https://www.semsales2020.ch/"
+        description="En tant que membre de la fanfare l'Edelweiss de Semsales, j'ai eu l'opportunité de réaliser le site web semsales2020.ch pour promouvoir le spectacle ARBRacadabrant. Ce spectacle a été spécialement créé pour le 100e anniversaire de la fanfare par des artistes fribourgeois tels que Philippe Huwiler, Pierre Schmidhaüsler et Claude Mordasini. Les festivités auront lieu les 2 premiers week-ends de juillet 2023 sur la place de la vieille église de Semsales. <br /> <br /> J'ai utilisé Wordpress comme plateforme et j'ai créé un thème personnalisé ce qui m'a permis de donner au site un aspect moderne et dynamique pour que les visiteurs puissent facilement trouver toutes les informations importantes sur l'événement. Le site optimisé pour les mobiles permet aux utilisateurs de naviguer facilement depuis leur smartphone ou leur tablette afin d'avoir les informations utiles également lorsqu'ils sont sur la place de fête. <br /> <br /> 
+ Le site semsales2020.ch est une vitrine pour l'événement ARBRacadabrant, fournissant des informations claires et précises sur le spectacle. Ce projet a été une occasion de mettre en pratique mes compétences en développement web et en design, tout en contribuant à la promotion de la fanfare."
       />
       <PortfolioItem
         title="Le Plan Gourmand"
