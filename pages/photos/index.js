@@ -30,7 +30,7 @@ const PhotoGallery = () => {
         <h3 className="mt-20 sm:mb-10">Mes photos</h3>
 
         <PhotoItem
-          title="Les Alpettes, 5 mars"
+          title="Les Alpettes, Semsales, 18 mars"
           date="18.03.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/16/16--19032023-01-243A7432.jpg",
@@ -41,7 +41,7 @@ const PhotoGallery = () => {
           note="16/52 Levers de soleil"
         />
         <PhotoItem
-          title="Les Alpettes, 5 mars"
+          title="Les Alpettes, Semsales 5 mars"
           date="5.03.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/15/05032023-02-243A7354.jpg",
@@ -53,7 +53,7 @@ const PhotoGallery = () => {
           note="15/52 Levers de soleil"
         />
         <PhotoItem
-          title="Le Berry, 18 février"
+          title="Le Berry, Les Paccots - Châtel-St-Denis, 18 février"
           date="18.02.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/14/18022023-03-243A7176.jpg",
@@ -65,7 +65,7 @@ const PhotoGallery = () => {
           note="14/52 Levers de soleil"
         />
         <PhotoItem
-          title=""
+          title="le Niremont - Semsales, 8 février"
           date="08.02.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/13/08022023-05-DJI_0005.jpg",
@@ -77,7 +77,7 @@ const PhotoGallery = () => {
           note="13/52 Levers de soleil"
         />
         <PhotoItem
-          title="Coucher de soleil depuis la maison"
+          title="Coucher de soleil depuis la maison - St-Martin, 31 janvier "
           date="Photos du 31.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/31012023-maison/31012023-03-243A6858.jpg",
@@ -88,7 +88,7 @@ const PhotoGallery = () => {
           description="Coucher de soleil depuis la maison en rentrant du job, y'avait plus qu'à se servir, je n'ai pas résisté!"
         />
         <PhotoItem
-          title="Les Alpettes, 29 janvier"
+          title="Les Alpettes, Semsales, 29 janvier"
           date="29.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/12-2/29012023-07-243A6826.jpg",
@@ -100,7 +100,7 @@ const PhotoGallery = () => {
           note="12/52 Levers de soleil - 2/2"
         />
         <PhotoItem
-          title="Les Alpettes, 29 janvier"
+          title="Les Alpettes, Semsales, 29 janvier"
           date="29.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/12-1/29012023-01-243A1253.jpg",
@@ -112,7 +112,7 @@ const PhotoGallery = () => {
           note="12/52 Levers de soleil - 1/2"
         />
         <PhotoItem
-          title="La Lécherette"
+          title="La Lécherette, Les Mosses, 24 janvier"
           date="24.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/24012023-lecherette/24012023-02-243A1212.jpg",
@@ -123,7 +123,7 @@ const PhotoGallery = () => {
           description="Petite virée après une journée de camp de ski à la Lécherette. Un coucher de soleil pour changer. Enfin le décor ne change pas vraiment... ☀️❄️🌄😍"
         />
         <PhotoItem
-          title="Niremont, 21 janvier"
+          title="Niremont, Semsales, 21 janvier"
           date="21.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/11/11--21012023-02-243A0893.jpg",
@@ -136,7 +136,7 @@ const PhotoGallery = () => {
         />
 
         <PhotoItem
-          title="Moléson, 7 janvier"
+          title="Moléson, Gruyères, 7 janvier"
           date="07.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/10/10--07012023-03-243A0592.jpg",
@@ -148,7 +148,7 @@ const PhotoGallery = () => {
         />
 
         <PhotoItem
-          title="Les Plaines, 2 janvier"
+          title="Les Plaines, Le Crêt, Vaulruz, 2 janvier"
           date="02.01.23"
           images={[
             "https://medias.digitalgarage.ch/photos/52/09/9--02012023-06-243A0526.jpg",
@@ -160,7 +160,7 @@ const PhotoGallery = () => {
         />
 
         <PhotoItem
-          title="Avry-devant-Pont"
+          title="Avry-devant-Pont, Lac de la Gruyère, 26 décembre"
           date="26.12.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/08/8--26122022-05-243A0484.jpg",
@@ -175,7 +175,7 @@ const PhotoGallery = () => {
         />
 
         <PhotoItem
-          title="Tremetta"
+          title="Tremetta, Rathvel, 22 décembre"
           date="18.12.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/07/7--18122022-01-243A0087.jpg",
@@ -192,7 +192,7 @@ const PhotoGallery = () => {
         />
 
         <PhotoItem
-          title="Corbetta, 7 décembre"
+          title="Corbetta, Châtel-St-Denis, les Paccots, 7 décembre"
           date="7.12.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/06/6--07122022-02-IMG_2351.jpg",
@@ -205,7 +205,7 @@ const PhotoGallery = () => {
           note="06/52 Levers de soleil"
         />
         <PhotoItem
-          title="Le Niremont, 3 décembre"
+          title="Le Niremont, Semsales, 3 décembre"
           date="03.12.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/05/52-5--03122022-1.jpg",
@@ -217,7 +217,7 @@ const PhotoGallery = () => {
           note="05/52 Levers de soleil"
         />
         <PhotoItem
-          title="Les Pléiades-sur-Vevey"
+          title="Les Pléiades-sur-Vevey, 27 novembre"
           date="27.11.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/04/52-4--27112022-1.jpg",
@@ -230,7 +230,7 @@ const PhotoGallery = () => {
           note="04/52 Levers de soleil"
         />
         <PhotoItem
-          title="Col de Lys"
+          title="Col de Lys, Les Paccots - Châtel-St-Denis, 22 novembre"
           date="19.11.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/03/52-3-191122-1.jpg",
@@ -242,7 +242,7 @@ const PhotoGallery = () => {
           note="03/52 Levers de soleil"
         />
         <PhotoItem
-          title="Lac des Joncs"
+          title="Lac des Joncs, Les Paccots, Châtel-St-Denis 13 novembre"
           date="13.11.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/02/52-02-13112022-1-IMG_0906.jpg",
@@ -254,7 +254,7 @@ const PhotoGallery = () => {
           note="02/52 Levers de soleil"
         />
         <PhotoItem
-          title="Niremont"
+          title="Niremont - Semsales, 6 novembre"
           date="6.11.22"
           images={[
             "https://medias.digitalgarage.ch/photos/52/01/52-01-06112022-1-IMG_0540.jpg",
@@ -271,4 +271,8 @@ const PhotoGallery = () => {
   );
 };
 
+PhotoGallery.getInitialProps = () => {
+  return { title: "Photos" , 
+  description: "Développeur web créatif, je vous propose des sites web personnalisés grâce à une solide expérience en développement front-end et une passion pour le design web. Particulièrement présent en Veveyse, dans la région de Châtel-St-Denis, Semsales, Attalens ou ailleurs dans le canton, que vous soyez une entreprise ou une société, je suis là pour vous aider à réaliser votre vision en matière de site web. Contactez-moi pour discuter de votre projet et découvrir comment nous pouvons travailler ensemble pour créer un site web qui vous ressemble." };
+};
 export default PhotoGallery;

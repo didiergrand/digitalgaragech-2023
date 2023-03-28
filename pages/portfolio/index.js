@@ -27,6 +27,7 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
       <PortfolioItem
         title="Commune de St-Martin"
         image="https://medias.digitalgarage.ch/sites/saint-martin-fr-ch.jpg"
+        alt="Création de site internet pour la commune de Saint-Martin Fribourg en Suisse"
         bgcolor="#81A1B7"
         link="https://www.saint-martin-fr.ch/"
         description="Bienvenue sur le site de la commune de Saint-Martin FR, un village accueillant situé au cœur de la magnifique région de la Veveyse. <br /><br />En tant qu’habitant de la commune, j’ai eu le plaisir de travailler sur cette nouvelle version du site web en mettant mon expertise à disposition de ce charmant village pour créer un site internet à son image. Grâce à une navigation simple et intuitive, vous pourrez facilement trouver toutes les informations pratiques dont vous avez besoin : horaires de l’administration, informations administratives et services, agenda des manifestations, etc. <br /><br />De plus, une section dédiée aux actualités et une section “pilier public” vous permettront de rester informé(e) de tout ce qui se passe à Saint-Martin FR. <br /><br />
@@ -35,6 +36,7 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
       <PortfolioItem
         title="Comptoir de la Veveyse"
         image="https://medias.digitalgarage.ch/sites/comptoir-veveyse-ch.jpg"
+        alt="Création de site internet, design et developpement pour le Comptoir de la Veveyse à Châtel-St-Denis, Fribourg, Suisse"
         bgcolor="#E8ECEF"
         link="https://comptoirveveyse.ch/"
         description="J’ai le plaisir de réaliser ce site internet depuis la première édition du Comptoir de la Veveyse.
@@ -43,6 +45,7 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
       <PortfolioItem
         title="ARBRacadabrant"
         image="https://medias.digitalgarage.ch/sites/semsales2020-ch.jpg"
+        alt="Création de site internet pour le spectacle ARBRacadabrant de la fanfare l'Edelweiss de Semsales, Fribourg, Suisse"
         bgcolor="#B1CE02"
         link="https://www.semsales2020.ch/"
         description="En tant que membre de la fanfare l'Edelweiss de Semsales, j'ai eu l'opportunité de réaliser le site web semsales2020.ch pour promouvoir le spectacle ARBRacadabrant. Ce spectacle a été spécialement créé pour le 100e anniversaire de la fanfare par des artistes fribourgeois tels que Philippe Huwiler, Pierre Schmidhaüsler et Claude Mordasini. Les festivités auront lieu les 2 premiers week-ends de juillet 2023 sur la place de la vieille église de Semsales. <br /> <br /> J'ai utilisé Wordpress comme plateforme et j'ai créé un thème personnalisé ce qui m'a permis de donner au site un aspect moderne et dynamique pour que les visiteurs puissent facilement trouver toutes les informations importantes sur l'événement. Le site optimisé pour les mobiles permet aux utilisateurs de naviguer facilement depuis leur smartphone ou leur tablette afin d'avoir les informations utiles également lorsqu'ils sont sur la place de fête. <br /> <br /> 
@@ -51,6 +54,7 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
       <PortfolioItem
         title="Le Plan Gourmand"
         image="https://medias.digitalgarage.ch/sites/leplangourmand-ch.jpg"
+        alt="Création de site internet pour Le Plan Gourmand, food truck et traiteur à Fribourg, Bulle, Châtel-St-Deins, Attalens, Suisse"
         bgcolor="#C8812F"
         link="https://www.leplangourmand.ch/"
         description="Bienvenue sur le site du Plan Gourmand, votre service de food
@@ -75,6 +79,7 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
       <PortfolioItem
         title="71e giron des musiques de la Veveyse - Saint-Martin 2022"
         image="https://medias.digitalgarage.ch/sites/st-martin2022-ch.jpg"
+        alt="Création de site internet pour le 71e giron des musiques de la Veveyse à Saint-Martin, Fribourg, Suisse"
         bgcolor="#AA06A5"
         link="https://www.st-martin2022.ch/"
         description="Je suis ravi de vous présenter le travail que j'ai réalisé pour le site web du 71e giron des musiques de la Veveyse.
@@ -91,4 +96,8 @@ Si vous cherchez un développeur web compétent et polyvalent, je suis là pour 
   );
 };
 
+Portfolio.getInitialProps = () => {
+  return { title: "Portfolio", 
+  description: "Développeur web créatif, je vous propose des sites web personnalisés grâce à une solide expérience en développement front-end et une passion pour le design web. Particulièrement présent en Veveyse, dans la région de Châtel-St-Denis, Semsales, Attalens ou ailleurs dans le canton, que vous soyez une entreprise ou une société, je suis là pour vous aider à réaliser votre vision en matière de site web. Contactez-moi pour discuter de votre projet et découvrir comment nous pouvons travailler ensemble pour créer un site web qui vous ressemble." };
+};
 export default Portfolio;

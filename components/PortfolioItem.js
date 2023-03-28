@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const PortfolioItem = ({ title, image, bgcolor, link, description }) => {
+const PortfolioItem = ({ title, image, alt, bgcolor, link, description }) => {
   return (
     <>
       <section className="portfolioitem max-w-7xl mx-auto p-6 pb-0 pt-0">
@@ -8,7 +8,7 @@ const PortfolioItem = ({ title, image, bgcolor, link, description }) => {
           <div className="col-start-1 sm:col-end-6 lg:col-end-7 pt-8 mb-10 sm:mb-0">
               <Image
                   src={image}
-                  alt={title}
+                  alt={alt}
                   style={{ backgroundColor: bgcolor }}
                   width={1333}
                   height={2000}

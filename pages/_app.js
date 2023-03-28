@@ -19,6 +19,9 @@ export default function App({ Component, pageProps }) {
     };
   }, [router.events]);
 
+  const pageTitle = pageProps.title + " | Didier Grand - web développeur créatif" || "Didier Grand - web développeur créatif";
+  const pageDescription = pageProps.description || "Développeur front-end, designer web créatif et photographe passionné, je présente mes travaux, compétences et services pour la création de sites web et adaptés à vos besoins. Je suis actif dans la région de Fribourg, Bulle, ou Châtel-St-Denis. Contactez-moi pour discuter de votre projet";
+
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
@@ -41,6 +44,9 @@ export default function App({ Component, pageProps }) {
       />
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+        {/* meta description */}
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
       </Head>
       <Component {...pageProps} />
     </>
