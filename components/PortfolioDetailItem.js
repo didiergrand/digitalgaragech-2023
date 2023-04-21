@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Link } from "react-router-dom";
 
 const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, slug, description, detail }) => {
   return (
