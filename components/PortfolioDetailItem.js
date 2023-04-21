@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link } from "react-router-dom";
 
-const PortfolioItem = ({ id, title, image, alt, bgcolor, link, slug, description }) => {
+const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, slug, description, detail }) => {
   return (
     <>
       <section className="portfolioitem max-w-7xl mx-auto p-6 pb-0 pt-0">
@@ -17,7 +17,7 @@ const PortfolioItem = ({ id, title, image, alt, bgcolor, link, slug, description
                 />
             </div>
             <div className="sm:col-start-7 lg:col-start-8 col-end-12">
-              <h4 className="sm:mb-10"><a href={`/portfolio/${slug}`} as={`/portfolio/${slug}`}>{title}</a></h4>
+              <h4 className="sm:mb-10">{title}</h4>
               <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
               <p>
                 Si vous désirez en savoir plus sur ce projet ou que vous souhaitez
@@ -39,10 +39,18 @@ const PortfolioItem = ({ id, title, image, alt, bgcolor, link, slug, description
             </div>
           </div>
         </div>
+        <div className="my-24">
+          {detail && (  
+            <>
+              <h3>Détails à propos du développement web de ce site</h3>   
+              <div dangerouslySetInnerHTML={{ __html: detail }} />
+            </>
+          )}
+        </div>
       </section>
       <hr className="mb-12 last:invisible" />
     </>
   );
 };
 
-export default PortfolioItem;
+export default PortfolioDetailItem;
