@@ -30,7 +30,7 @@ const PortfolioDetail = ({ item }) => {
       <div className="bottomNav">
       {prevItem && (
           <div className="bottomNav-prev">
-          <a
+          <a  className="text-slate-900 dark:text-white" 
             href={`/portfolio/${prevItem.slug}`}
             title={`Découvrez la création du site web ${prevItem.title}`}
           >
@@ -53,7 +53,7 @@ const PortfolioDetail = ({ item }) => {
           </div>
       )}
       <div className="bottomNav-back">
-        <a
+        <a  className="text-slate-900 dark:text-white" 
           href={`/portfolio`}
           title={`Retour à toutes les réalisations du sites internet`}
         >
@@ -80,7 +80,7 @@ const PortfolioDetail = ({ item }) => {
       </div>
       {nextItem && (
         <div className="bottomNav-next">
-          <a
+        <a  className="text-slate-900 dark:text-white" 
             href={`/portfolio/${nextItem.slug}`}
             title={`Réalisation du site internet ${nextItem.title}`}
           >
