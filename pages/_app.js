@@ -1,4 +1,5 @@
 import '@component/styles/tailwind.css'
+import '@component/styles/prism.css'
 import '@component/styles/globals.scss'
 import Script from 'next/script'
 import Head from "next/head";
@@ -53,6 +54,7 @@ export default function App({ Component, pageProps }) {
         {/* meta description */}
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <script src="../lib/prism.js" />
       </Head>
       <Component {...pageProps} />
     </>

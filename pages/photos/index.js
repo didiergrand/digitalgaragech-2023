@@ -7,7 +7,7 @@ const PhotoGallery = () => {
     <Layout>
       <HeroBanner />
 
-      <section className="max-w-7xl mx-auto p-6 pb-0 pt-12">
+      <section className="max-w-7xl mx-auto p-6 pb-0 pt-12 photos">
         <h2>Photo</h2>
         <div className="grid grid-cols-12 gap-4">
           <div className="col-start-1 col-end-10 lg:col-end-9 pt-8 pb-8">

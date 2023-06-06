@@ -14,6 +14,7 @@ const LatestWork = () => {
       {/* get the latest item of portfolioData.json */}
       {sortedData.slice(0, 1).map((item) => (
                 <PortfolioItem
+                key={item.id}
                 id={item.id}
                 title={item.title}
                 image={item.image}

@@ -6,8 +6,14 @@
   --light: #fff;
   --light-alternative: #e5e7eb;
   --primary: #eab308;
+  --orange: #ffbf00;
+  --dark-orange: #552f00;
+  --light-orange: #fff2c9;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=PT+Sans:wght@700&display=swap');
+
 body{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -78,16 +84,31 @@ h1,h2{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.blogitem h1{
+  line-height: 1.2;
+}
+.blogitem h2{
+  margin-top: 4rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
 h3{
   font-size: 2rem;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.blogitem h3{
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+}
 h4{
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p{
   margin-bottom: 1rem;
 }
 .photogallery{
@@ -99,6 +120,11 @@ h4{
 .photogallery img{
   height: 100%;
   width: 100%;
+}
+.photos .photoitem{
+  border-bottom: 1px solid var(--light-alternative);
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .portfolioitem img{
   padding: 50px 50px 0 50px;
@@ -180,4 +206,90 @@ footer{
     font-size: 1rem;
   }
   
+}
+code[class*=language-], pre[class*=language-] {
+  font-feature-settings: normal;
+  color: var(--dark);
+  text-shadow: 0 1px var(--white);
+  font-family: Fira Code,Menlo,Consolas,Monaco,andale mono,ubuntu mono,monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  font-variant-ligatures: none;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+  line-height: 1.8;
+}
+pre[class*=language-]{
+  margin: 20px 0 30px;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+}
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url{  
+  background-color: transparent;
+}
+
+.command-line-prompt {
+  background: #1b1b1b !important;
+}
+
+.command-line-prompt code{
+  color: var(--white) !important;
+  text-shadow: none !important;
+}
+pre[rel]:not([rel=""]):before {
+  font-family: "Poppins",Sans-Serif;
+  font-style: normal;
+  font-size: .5rem;
+  content: attr(rel);
+  color: var(--white);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 0;
+  color: var(--primary) !important;
+  text-shadow: none !important;
+}
+ol{
+  list-style: decimal;
+  margin: 5px;
+  padding: 20px 10px;
+}
+ol li{
+  margin-bottom: 20px;
+}
+.note{
+  font-size: .8rem;
+  position: relative;
+  margin: 0 0 1.5rem;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background: var(--light-alternative);
+  color: var(--dark-alternative);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 4.5rem;
+}
+.note:before{
+  content: "";
+  background-image: url("../public/images/tipicon.png");
+  background-color: var(--dark-alternative);
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  width: 50px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0.88rem 1rem;
+  margin-right: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }

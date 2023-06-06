@@ -4,7 +4,7 @@ import Image from "next/image";
 const PhotoItem = ({ title, horizontalimg, images, date, description, note }) => {
   return (
     <>
-    <div className="max-w-7xl mx-auto mb-8">
+    <div className="max-w-7xl mx-auto mb-8 photoitem">
             <h4>{title}</h4>
             <small className="date text-gray-400">{date}</small>
             <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -58,9 +58,7 @@ const PhotoItem = ({ title, horizontalimg, images, date, description, note }) =>
             </div>
         </div>
           )}
-            
     </div>
-    <hr className="mb-12"/>
     </>
   );
 };
