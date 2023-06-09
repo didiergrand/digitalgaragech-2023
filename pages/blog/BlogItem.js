@@ -22,7 +22,7 @@ const BlogItem = ({ id, title, image, slug, description }) => {
 
       fetchImageDetails();
     } else {
-      setImageUrl('https://medias.digitalgarage.ch/7--18122022-01-243A0087.jpg');
+      setImageUrl('https://medias.digitalgarage.ch/placeholder.png');
     }
   }, [image]);
 
@@ -31,10 +31,11 @@ const BlogItem = ({ id, title, image, slug, description }) => {
           <div className="pt-8 mb-10 sm:mb-0">
             <h4 className="sm:mb-10"><a href={`/blog/${slug}`} as={`/blog/${slug}`}>{title}</a></h4>
             <Image
-                src={imageUrl}
+                src={imageUrl ? imageUrl : 'https://medias.digitalgarage.ch/placeholder.png'}
                 width={1333}
                 height={2000}
                 alt={slug}
+                className="featured_media"
                 unoptimized
               />
           </div>
@@ -44,7 +45,6 @@ const BlogItem = ({ id, title, image, slug, description }) => {
             <div>
                 <a
                 href={`/blog/${slug}`} as={`/blog/${slug}`}
-                target="_blank"
                 className="btn text-white bg-slate-900 hover:bg-slate-700 hover:text-white 
                 dark:text-slate-900 dark:bg-white dark:hover:bg-slate-700 dark:hover:text-white 
                 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"

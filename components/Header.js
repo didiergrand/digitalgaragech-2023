@@ -129,13 +129,13 @@ const Header = () => {
             href="/portfolio"
             className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
           >
-            Portfolio
+            Web
           </Link>
           <Link
             href="/photos"
             className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
           >
-            Photos
+            Photo
           </Link>
           <Link
             href="/blog"

@@ -108,6 +108,12 @@ h4{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.dark h4 a{
+  color: var(--light) !important;
+}
+h4 a{
+  color: var(--dark) !important;
+}
 p{
   margin-bottom: 1rem;
 }
@@ -259,9 +265,9 @@ ol{
   padding: 20px 10px;
 }
 ol li{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.note{
+.technote{
   font-size: .8rem;
   position: relative;
   margin: 0 0 1.5rem;
@@ -274,7 +280,7 @@ ol li{
   overflow: hidden;
   padding: 1rem 1rem 1rem 4.5rem;
 }
-.note:before{
+.technote:before{
   content: "";
   background-image: url("../public/images/tipicon.png");
   background-color: var(--dark-alternative);
@@ -292,4 +298,7 @@ ol li{
   height: 100%;
   display: grid;
   place-items: center;
+}
+.featured_media{
+  border-radius: 5px;
 }

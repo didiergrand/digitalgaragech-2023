@@ -24,19 +24,20 @@ const BlogDetailItem = ({ post, previousPost, nextPost, similarPosts }) => {
   }, [post.featured_media]);
 
   return (
-    <div className="blogitem max-w-7xl mx-auto p-6 pb-0 pt-0">
+    <div className="blogitem max-w-7xl mx-auto p-6 pb-0 pt-0 language-js">
       <div className="pt-8 mb-10 sm:mb-0">
         <h1 className="sm:mb-10">{post.title.rendered}</h1>
         <Image
-          src={post.featured_media ? imageUrl : 'https://medias.digitalgarage.ch/7--18122022-01-243A0087.jpg'}
+          src={imageUrl ? imageUrl : 'https://medias.digitalgarage.ch/placeholder.png'}
           width={1333}
           height={2000}
           alt={post.slug}
           unoptimized
+          className="featured_media"
         />
       </div>
       <div className="sm:grid grid-cols-12 gap-4">
-        <div className="col-start-2 col-end-11 lg:col-start-3 lg:col-end-10 pt-8 pb-8">
+        <div className="col-start-2 col-end-11 lg:col-start-3 lg:col-end-11 pt-8 pb-8">
           <div
             className="mb-6"
             dangerouslySetInnerHTML={{ __html: post.content.rendered }}
@@ -46,6 +47,8 @@ const BlogDetailItem = ({ post, previousPost, nextPost, similarPosts }) => {
 
       <hr className="mb-12 last:invisible" />
       {/* Articles similaires */}
+      {similarPosts.length > 0 && (
+      <div>
       <h3>Articles similaires</h3>
       <div className="grid grid-cols-3 gap-8">
         {similarPosts.map((article) => (
@@ -53,25 +56,27 @@ const BlogDetailItem = ({ post, previousPost, nextPost, similarPosts }) => {
             key={article.id}
             id={article.id}
             title={article.title.rendered}
-            image={article.featured_media}
+            image={article.featured_media  ? article.featured_media : 'https://medias.digitalgarage.ch/placeholder.png'}
             slug={article.slug}
             description={article.excerpt.rendered}
           />
         ))}
       </div>
-      {/* Bouton précédent */}
+      </div>
+      )}
+      {/* Bouton précédent
       {previousPost && (
         <Link href={`/blog/${previousPost.slug}`}>
           {previousPost.title.rendered}
         </Link>
-      )}
+      )} */}
 
-      {/* Bouton suivant */}
+      {/* Bouton suivant 
       {nextPost && (
         <Link href={`/blog/${nextPost.slug}`}>
           {nextPost.title.rendered}
         </Link>
-      )}
+      )}*/}
     </div>
   );
 };

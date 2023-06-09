@@ -4,7 +4,7 @@ const PhotoGallery = () => {
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto p-6">
-        <h2>Photos</h2>
+        <h2>Photo</h2>
         <div className="sm:grid grid-cols-12 gap-4">
           <div className="col-start-1 col-end-12 sm:col-end-7 lg:col-end-9 pt-8 pb-8">
             52 levers de soleil est mon projet photo actuel. Je vais me balader
