@@ -2,6 +2,7 @@ import Layout from "@component/components/Layout";
 import PortfolioDetailItem from "../../components/PortfolioDetailItem";
 import portfolioData from "../../data/portfolioData.json";
 import { useRouter } from "next/router";
+import { removeHTMLTags } from "../../utils/removeHTMLtags";
 
 const PortfolioDetail = ({ item }) => {
   const router = useRouter();
@@ -110,7 +111,11 @@ const PortfolioDetail = ({ item }) => {
 PortfolioDetail.getInitialProps = ({ query }) => {
   const { slug } = query;
   const item = portfolioData.items.find((item) => item.slug === slug);
-  return { item };
+
+  const title = removeHTMLTags(item.title);
+  const description = removeHTMLTags(item.description);
+
+  return { item, title, description };
 };
 
 export default PortfolioDetail;

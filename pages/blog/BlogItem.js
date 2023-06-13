@@ -1,46 +1,67 @@
 import Image from "next/image";
-import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { fetchImage } from '../../utils/imageUtils';
+import { formatDate } from '../../utils/dateUtils'; 
+import { fetchPostTags } from '../../utils/tagsUtils';
 
+const BlogItem = ({ title, date, image, slug, description }) => {  
 
-const BlogItem = ({ id, title, image, slug, description }) => {
-  const [imageUrl, setImageUrl] = useState('');
-  console.log(image);
+  const [imageUrl, setImageUrl] = useState('https://medias.digitalgarage.ch/placeholder.png');
   useEffect(() => {
-    if (image) {
-      const fetchImageDetails = async () => {
-        try {
-          const response = await axios.get(
-            `https://admin.digitalgarage.ch/wp-json/wp/v2/media/${image}`
-          );
-          const imageDetails = response.data;
-          setImageUrl(imageDetails.source_url);
-        } catch (error) {
-          console.error('Erreur lors de la récupération des détails de l\'image', error);
-        }
-      };
-
-      fetchImageDetails();
-    } else {
-      setImageUrl('https://medias.digitalgarage.ch/placeholder.png');
-    }
+    const getImageUrl = async () => {
+      const url = await fetchImage(image || null);
+      setImageUrl(url);
+    };
+    getImageUrl();
   }, [image]);
+
+
+  const [tags, setTags] = useState([]);
+  useEffect(() => {
+    async function fetchTags() {
+      try {
+        const tags = await fetchPostTags(slug);
+        setTags(tags);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchTags();
+  }, []);
+  
+const originalDate = date;
+const formattedDate = formatDate(originalDate);
 
   return (
       <div className="blogitem max-w-7xl mx-auto p-6 pb-0 pt-0 language-js">
           <div className="pt-8 mb-10 sm:mb-0">
-            <h4 className="sm:mb-10"><a href={`/blog/${slug}`} as={`/blog/${slug}`}>{title}</a></h4>
+            <h4 className="sm:mb-10"><a href={`/blog/${slug}`} as={`/blog/${slug}`}
+            dangerouslySetInnerHTML={{ __html: title }} /></h4>
+            <a href={`/blog/${slug}`} as={`/blog/${slug}`}>
             <Image
-                src={imageUrl ? imageUrl : 'https://medias.digitalgarage.ch/placeholder.png'}
+                src={imageUrl}
                 width={1333}
                 height={2000}
                 alt={slug}
                 className="featured_media"
                 unoptimized
               />
+            </a>
           </div>
-          <div className="mt-10">
-            <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
+          <div className="mt-10 relative">
+            <small className="date">
+              {formattedDate}
+            </small>
+            {tags && tags.length > 0 && (
+              <div className="tags">
+                {tags.map((tag) => (
+                  <span key={tag} className={`tag ${tag.replace(/\/|\s/g, '').toLowerCase()}`}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+            <div className="mb-6 mt-3" dangerouslySetInnerHTML={{ __html: description }} />
             
             <div>
                 <a
@@ -56,5 +77,4 @@ const BlogItem = ({ id, title, image, slug, description }) => {
       </div>
   );
 };
-
 export default BlogItem;

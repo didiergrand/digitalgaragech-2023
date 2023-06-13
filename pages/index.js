@@ -5,18 +5,30 @@ import Layout from "@component/components/Layout";
 import Welcome from "@component/components/Welcome";
 import LatestBlogs from "@component/components/LatestBlogs";
 
+
+const fetchPosts = async () => {
+  try {
+    const res = await fetch('https://admin.digitalgarage.ch/wp-json/wp/v2/posts');
+    const responseData = await res.json();
+    return responseData;
+  } catch (error) {
+    console.error('Erreur lors de la récupération des articles', error);
+    return [];
+  }
+};
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
-  
+
   useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await fetch('https://admin.digitalgarage.ch/wp-json/wp/v2/posts')
-      const data = await res.json();
+    const getPosts = async () => {
+      const data = await fetchPosts();
       setPosts(data);
-    }
-    fetchPosts();
+    };
+
+    getPosts();
   }, []);
-  
+
   return (
     <Layout>
       <Welcome />

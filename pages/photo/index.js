@@ -22,8 +22,7 @@ const PhotoGallery = () => {
               permettre d’en faire régulièrement.
               <br />
               <br />
-              Alors si vous avez envie de me suivre dans cette aventure
-              n’hésitez pas à vous abonner à mon compte instagram <a href=""></a>@di_g.
+              Alors si vous avez envie de me suivre dans cette aventure <a href="https://www.instagram.com/di_g">n’hésitez pas à vous abonner à mon compte instagram @di_g</a>.
             </p>
           </div>
         </div>

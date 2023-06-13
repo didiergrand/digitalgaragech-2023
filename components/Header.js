@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Dialog, Popover } from "@headlessui/react";
+import { useRouter } from "next/router";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -56,6 +57,7 @@ const themeSwitcher = () => {
 };
 
 const Header = () => {
+  const router = useRouter();
   useEffect(() => {
     themeSwitcher();
   }, []);
@@ -121,31 +123,31 @@ const Header = () => {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Link
             href="/"
-            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname === "/" ? "active" : ""}`}
           >
             Accueil
           </Link>
           <Link
             href="/portfolio"
-            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname === "/portfolio" ? "active" : ""}`}
           >
             Web
           </Link>
           <Link
-            href="/photos"
-            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
+            href="/photo"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname === "/photo" ? "active" : ""}`}
           >
             Photo
           </Link>
           <Link
             href="/blog"
-            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname.startsWith("/blog") ? "active" : ""}`}
           >
             Blog
           </Link>
           <Link
             href="/about"
-            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname === "/about" ? "active" : ""}`}
           >
             À propos
           </Link>

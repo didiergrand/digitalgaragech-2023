@@ -9,6 +9,12 @@
   --orange: #ffbf00;
   --dark-orange: #552f00;
   --light-orange: #fff2c9;
+  --tag-red: #fb325a;
+  --tag-orange: #ff764e;
+  --tag-violet: #4f3051;
+  --tag-green: #46dfc3;
+  --tag-blue: #111827;
+
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400&display=swap');
@@ -301,4 +307,32 @@ ol li{
 }
 .featured_media{
   border-radius: 5px;
+}
+.active{
+  color: var(--primary);
+}
+.date{
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+.tags{
+  position: absolute;
+  right: 0;
+  top: 0;
+  .tag{
+    margin-right: 5px;
+    font-size: 0.6em;
+    background-color: var(--light-alternative);
+    border-radius: 2px;
+    padding: 4px 6px;
+    color: var(--dark-alternative);
+  }
+  .tag.uxui{
+    background-color: var(--tag-blue);
+    color: var(--white);
+  }
+  .tag.react{
+    background-color: var(--tag-violet);
+    color: var(--white);
+  }
 }

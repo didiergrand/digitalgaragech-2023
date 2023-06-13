@@ -4,6 +4,7 @@ import BlogItem from "../pages/blog/BlogItem";
 //const sortedData = blogData.items.sort((a, b) => b.id - a.id);
 
 const Blog = props => {
+  
   return (
     <>
     <div className="max-w-7xl mx-auto p-6">
@@ -16,13 +17,15 @@ const Blog = props => {
       <BlogItem
         key={post.id}
         id={post.id}
+        date={post.date}
         title={post.title.rendered}
-        image={post.featured_media  ? post.featured_media : 'https://medias.digitalgarage.ch/placeholder.png'}
+        image={post.featured_media}
         slug={post.slug}
         description={post.excerpt.rendered}
       />
     ))}
-    </section></>
+    </section>
+    </>
   );
 };
 export default Blog;

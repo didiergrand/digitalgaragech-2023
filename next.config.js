@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
+    domains: ['admin.digitalgarage.ch'],
     remotePatterns: [
         {
           protocol: 'https',
