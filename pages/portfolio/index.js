@@ -12,9 +12,10 @@ const Portfolio = () => {
         <h2>Web</h2>
         <div className="grid grid-cols-12 gap-4">
           <div className="col-start-1 col-end-10 lg:col-end-9 pt-8 pb-8">
-            <p>Je vous invite à découvrir une sélection de mes travaux personnels en développement front-end et web design. Chaque projet illustre ma passion pour la création digitale et représente un témoignage de mon expertise et de ma créativité.</p>
-            <p>J'ai eu le plaisir de travailler avec une variété d'entreprises et d'organisations, contribuant à la réalisation de leurs objectifs numériques. Mon approche est centrée sur le design fonctionnel et esthétique, l'expérience utilisateur fluide, et l'authenticité de chaque projet.</p>
-            <p>Vous avez un projet web qui vous tient à cœur? <a href="mailto:contact@digitalgarage.ch">N'hésitez pas à me contacter</a> pour en discuter et voir comment je peux vous aider à le concrétiser.</p>
+            <p>Je vous invite à découvrir une sélection de mes travaux personnels en développement front-end et web design.</p>
+            <p>Web designer et développeur front-end chez SCOTT Sports, je réalise également des projets personnels et propose mes services aux entreprises et organisations qui cherchent à créer ou améliorer leur présence en ligne.</p>
+            <p>Je suis particulièrement actif pour la création de sites web à Châtel-St-Denis, et dans la région. Ces dernières années j’ai réalisé les sites pour les communes de Semsales, Saint-Martin, Attalens, Bossonnens et Granges Veveyse. J’ai eu également eu le plaisir de réaliser plusieurs sites pour les girons de Musiques et de Jeunesse. Je réalise également des sites web pour des PME qui me sollicitent pour la création de leur site web.</p>
+            <p>Vous avez un projet web qui vous tient à cœur? N'hésitez pas à me contacter pour en discuter et voir comment je peux vous aider à le concrétiser.</p>
           </div>
         </div>
         <h3 className="mt-20 sm:mb-10">Dernières réalisations</h3>
