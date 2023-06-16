@@ -17,7 +17,7 @@ const fetchPosts = async () => {
   }
 };
 
-export default function Home() {
+const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -40,3 +40,11 @@ export default function Home() {
     </Layout>
   );
 }
+
+
+Home.getInitialProps = () => {
+  return { title: "Web développeur créatif, Didier Grand vous présente ses derniers travaux, articles de blod et ses photos." , 
+  description: "Création de sites internet à Châtel-St-Denis, Semsales, Saint-Martin, Attalens, Bossonnens et Granges Veveyse. Découvrez mes travaux et mes photos, explorez mes articles de blog et n'hésitez pas à me contacter pour discuter de votre projet web." };
+};
+export default Home;
+
