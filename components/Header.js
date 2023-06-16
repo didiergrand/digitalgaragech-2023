@@ -74,8 +74,8 @@ const Header = () => {
           <a href="/" className="-m-1.5 p-1.5">
             {/* if dark theme display logo black with tailwind.css */}
             {/* else if light theme display logo white with tailwind.css */}
-            <Image src={LogoBlack} className="block dark:hidden" alt="DigitalGarage" width={48} height={48} />
-            <Image src={LogoWhite} className="hidden dark:block" alt="DigitalGarage" width={48} height={48} />
+            <Image src={LogoBlack} className="block dark:hidden" alt="DigitalGarage, Didier Grand, Creative Web Developer" width={48} height={48} />
+            <Image src={LogoWhite} className="hidden dark:block" alt="DigitalGarage, Didier Grand, Creative Web Developer" width={48} height={48} />
 
 
           </a>
@@ -85,6 +85,7 @@ const Header = () => {
             id="theme-toggle"
             type="button"
             className="text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            aria-label="Changer de thème"
           >
             <svg
               id="theme-toggle-dark-icon"
@@ -115,8 +116,9 @@ const Header = () => {
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
             onClick={() => setMobileMenuOpen(true)}
+            aria-label="Ouvrez le menu principal"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Ouvrez le menu principal</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -165,7 +167,7 @@ const Header = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only"></span>
 
-              <Image src={LogoBlack} className="block dark:hidden" alt="DigitalGarage" width={48} height={48} />
+            <Image src={LogoBlack} className="block dark:hidden" alt="DigitalGarage" width={48} height={48} />
             <Image src={LogoWhite} className="hidden dark:block" alt="DigitalGarage" width={48} height={48} />
             </a>
             <button
