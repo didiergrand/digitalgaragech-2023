@@ -26,7 +26,7 @@ const About = () => {
   };
   
   About.getInitialProps = () => {
-    return { title: "Web développeur créatif, Didier Grand vous présente ses derniers travaux, articles de blod et ses photos." , 
+    return { title: "Web développeur créatif, Didier Grand vous présente ses derniers travaux, articles de blog et ses photos." , 
     description: "Découvrez Digitalgarage, l'univers créatif de Didier Grand. Professionnel en développement front-end chez SCOTT Sports et passionné par la création de sites web, Didier partage ses compétences et son expertise en web design et rédaction de blog pour aider à optimiser votre présence en ligne. Explorez ses projets, découvrez ses clichés photographiques et contactez-le pour vos projets web." };
   };
   
