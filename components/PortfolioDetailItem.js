@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, slug, description, detail }) => {
+const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, description, detail }) => {
   return (
     <>
       <section className="portfolioitem max-w-7xl mx-auto p-6 pb-0 pt-0">
@@ -16,7 +16,7 @@ const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, slug, descripti
                 />
             </div>
             <div className="sm:col-start-7 lg:col-start-8 col-end-12">
-              <h4 className="sm:mb-10">{title}</h4>
+              <h1 className="sm:mb-10 h4">{title}</h1>
               <div className="mb-6" dangerouslySetInnerHTML={{ __html: description }} />
               <p>
                 Si vous désirez en savoir plus sur ce projet ou que vous souhaitez
@@ -29,7 +29,6 @@ const PortfolioDetailItem = ({ title, image, alt, bgcolor, link, slug, descripti
                 href={link}
                 target="_blank"
                 className="btn text-white bg-slate-900 hover:bg-slate-700 hover:text-white 
-                
                 dark:text-slate-900 dark:bg-white dark:hover:bg-slate-700 dark:hover:text-white 
                           focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
               >

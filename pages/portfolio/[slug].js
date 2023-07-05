@@ -26,6 +26,7 @@ const PortfolioDetail = ({ item }) => {
         link={item.link}
         slug={item.slug}
         description={item.description}
+        keywords={item.keywords}
         detail={item.detail}
       />
       <div className="bottomNav">
@@ -114,8 +115,9 @@ PortfolioDetail.getInitialProps = ({ query }) => {
 
   const title = removeHTMLTags(item.title);
   const description = removeHTMLTags(item.description);
+  const keywords = removeHTMLTags(item.keywords);
 
-  return { item, title, description };
+  return { item, title, description, keywords };
 };
 
 export default PortfolioDetail;

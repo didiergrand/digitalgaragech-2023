@@ -20,14 +20,9 @@ export default function App({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  let pageTitle = "Didier Grand - web développeur créatif";
-  if(pageProps.title){
-    pageTitle = pageProps.title + " | Didier Grand - web développeur créatif" || "Didier Grand - web développeur créatif";
-  }
-  let pageDescription
-  if(pageProps.description){
-   pageDescription = pageProps.description || "Développeur front-end, designer web créatif et photographe passionné, je présente mes travaux, compétences et services pour la création de sites web et adaptés à vos besoins. Je suis actif dans la région de Fribourg, Bulle, ou Châtel-St-Denis. Contactez-moi pour discuter de votre projet";
-  }
+  let pageTitle = pageProps.title + " | Didier Grand - web développeur créatif" || "Didier Grand - web développeur créatif";
+  let pageDescription = pageProps.description || "Développeur front-end, designer web créatif et photographe passionné, je présente mes travaux, compétences et services pour la création de sites web et adaptés à vos besoins. Je suis actif dans la région de Fribourg, Bulle, ou Châtel-St-Denis. Contactez-moi pour discuter de votre projet";
+  let pageKeywords = pageProps.keywords || "web, développeur, créatif, front-end, designer, web, photographe, travaux, compétences, services, création, sites, web, Fribourg, Bulle, Châtel-St-Denis, contactez-moi, discuter, projet";
 
   return (
     <>
@@ -54,6 +49,7 @@ export default function App({ Component, pageProps }) {
         {/* meta description */}
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={pageKeywords} />
         <script src="../lib/prism.js" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
