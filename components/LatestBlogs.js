@@ -13,7 +13,7 @@ const Blog = props => {
       </div>
     <section className="blogitem max-w-7xl mx-auto p-0 pt-12 sm:grid grid-cols-3 gap-6">
     {/* Loop blog posts */}
-    {props.posts && props.posts.map(post => (
+    {props.posts && props.posts.slice(0, 3).map(post => (
       <BlogItem
         key={post.id}
         id={post.id}

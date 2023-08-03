@@ -33,10 +33,10 @@ const Home = () => {
     <Layout>
       <Welcome />
       <hr className="mb-12" />
-      <LatestBlogs posts={posts} />
-      <hr className="mb-12" />
       <LatestWork />
       <PhotoGallery />
+      <hr className="mb-12" />
+      <LatestBlogs posts={posts} />
     </Layout>
   );
 }
