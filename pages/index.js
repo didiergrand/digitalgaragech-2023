@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LatestWork from "../components/LatestWork";
+import Clients from "../components/Clients";
 import PhotoGallery from "../components/PhotoGallery";
 import Layout from "@component/components/Layout";
 import Welcome from "@component/components/Welcome";
@@ -33,7 +33,7 @@ const Home = () => {
     <Layout>
       <Welcome />
       <hr className="mb-12" />
-      <LatestWork />
+      <Clients />
       <PhotoGallery />
       <hr className="mb-12" />
       <LatestBlogs posts={posts} />

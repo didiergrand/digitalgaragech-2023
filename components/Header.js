@@ -54,6 +54,8 @@ const themeSwitcher = () => {
       }
     }
   });
+  document.documentElement.classList.remove("dark");
+  localStorage.setItem("color-theme", "light");
 };
 
 const Header = () => {
@@ -81,10 +83,10 @@ const Header = () => {
           </a>
         </div>
         <div className="lg:order-last justify-end ml-12">
-          <button
+         <button
             id="theme-toggle"
             type="button"
-            className="text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            className="text-gray-900 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 hidden"
             aria-label="Changer de thème"
           >
             <svg
@@ -110,7 +112,7 @@ const Header = () => {
               ></path>
             </svg>
           </button>
-        </div>
+        </div> 
         <div className="flex lg:hidden  px-6 order-last">
           <button
             type="button"

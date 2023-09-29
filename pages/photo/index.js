@@ -28,6 +28,122 @@ const PhotoGallery = () => {
         </div>
         <h3 className="mt-20 sm:mb-10">Mes photos</h3>
 
+
+
+
+        <PhotoItem
+          title="Niremont, 27 mai"
+          date="27.05.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-01-243A9901.jpg",
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-04-243A0040.jpg",
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-02-243A9955.jpg", // right grande image
+          ]}
+          horizontalimg="top"
+          description="Un pti Niremont pour le plaisir, toujours calmos avec ma cheville 🚶‍♂<br />
+          Bonne semaine à tous !"
+          note="25/52 Levers de soleil"
+        />
+        
+        <PhotoItem
+          title="Les Pléiades-sur-Vevey, 20 mai"
+          date="20.05.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/24/24-200520232-03-243A9771.jpg",
+            "https://medias.digitalgarage.ch/photos/52/24/24-200520232-02-243A9757.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/24/24-200520232-01-243A9737.jpg",
+          ]}
+          horizontalimg="top"
+          description="Aller voir les narcisses et un test de la cheville en même temps 👍. Joli tour aux Pleiades, ça fait plaisir de pouvoir retourner se balader. Tranquille quand même..."
+          note="24/52 Levers de soleil"
+        />
+
+        <PhotoItem
+          title="Saint-Martin (Fribourg), 6 mai"
+          date="06.05.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/23/23-06052023-03-243A9482.jpg",
+            "https://medias.digitalgarage.ch/photos/52/23/23-06052023-02-243A9466.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/23/23-06052023-01-243A9386.jpg",
+          ]}
+          horizontalimg="top"
+          description="Parfois, un imprévu peut nous faire découvrir des merveilles juste sous notre nez. Avec mon entorse à la cheville du we dernier, ma balade s'est réduite à une mini-expédition autour de chez moi. J'ai capturé ce moment de calme en photos, avant que ma journée ne se termine plus mouvementée qu'elle n'a commencé."
+          note="23/52 Levers de soleil"
+        />
+
+        <PhotoItem
+          title="Moléson, 30 avril"
+          date="30.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/22/TDR23-04-243A9305.jpg",
+            "https://medias.digitalgarage.ch/photos/52/22/TDR23-07-243A9314.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/22/TDR23-08-243A9328.jpg",
+          ]}
+          description="Magnifique balade matinale autour du Moléson avec une belle pliée de cheville pour pimenter la fin de parcours."
+          note="22/52 Levers de soleil"
+        />
+
+        <PhotoItem
+          title="Col de Soladier, 18 mars"
+          date="23.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/21/21-23042023-01-243A7898.jpg",
+            "https://medias.digitalgarage.ch/photos/52/21/21-23042023-02-243A7915.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/21/21-23042023-03-243A7923.jpg",
+          ]}
+          description="Dimanche matin, je suis allé au col de Soladier. Mercredi dernier quand j’étais au col de Lys, je me suis souvenu qu'on a un magnifique point de vue de là-bas. Joli point de vue effectivement, fidèle à mes souvenirs, mais alors, y’avait encore un paquet de neige. Je me suis fait avoir comme un bleu, comme on dit. Le plan était de faire le Molard et le Folly qui se trouvent sur la route du retour quand on passe par la passerelle de Fégire pour le retour, mais non, finalement pas, c’était un peu trop casse-pattes avec toute la neige qu’il y avait encore par endroits. Mais c’était tout de même une très belle virée, à refaire quand il n’y aura plus de neige et que le soleil sera moins timide!<br />
+          Bonne semaine !"
+          note="21/52 Levers de soleil"
+        />
+        <PhotoItem
+          title="Col de Lys, 19 avril"
+          date="19.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/20/20-19042023-06-243A7892.jpg", // 
+            "https://medias.digitalgarage.ch/photos/52/20/20-19042023-05-243A7850.jpg",
+            "https://medias.digitalgarage.ch/photos/52/20/20-19042023-07-243A7896.jpg",
+          ]}
+          horizontalimg="top"
+          description="Quoi de mieux que d'aller rencontrer le soleil au Pralet et au col de Lys pour commencer cette belle journée. 😎"
+          note="20/52 Levers de soleil"
+        />
+        <PhotoItem
+          title="Gros-de-Vaud, 6 avril"
+          date="06.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/19/19-06042023-02-243A7723.jpg",
+            "https://medias.digitalgarage.ch/photos/52/19/19-06042023-03-243A7729.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/19/19-06042023-04-243A7734.jpg",
+          ]}
+          horizontalimg="top"
+          description="Balade matinale à vélo au bord du lac Léman et retour par le Gros-de-Vaud. 🚴"
+          note="19/52 Levers de soleil"
+        />
+        <PhotoItem
+          title="Le Moléson, 5 avril"
+          date="05.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/18/18-05042023-02-243A7666.jpg",
+            "https://medias.digitalgarage.ch/photos/52/18/18-05042023-03-243A7667.jpg", // right grande image
+            "https://medias.digitalgarage.ch/photos/52/18/18-05042023-05-243A7695.jpg",
+          ]}
+          horizontalimg="top"
+          description="Période idéale pour faire le tour du Moléson au levé du jour. Je suis ravi de partager ces quelques photos avec vous 📷 😎
+          Joyeuses Pâques à toutes et tous ! 🐰"
+          note="18/52 Levers de soleil"
+        />
+        <PhotoItem
+          title="Le Niremont, Semsales, 01 avril"
+          date="01.04.23"
+          images={[
+            "https://medias.digitalgarage.ch/photos/52/17/17--01042023-03-IMG_1067.jpg",
+            "https://medias.digitalgarage.ch/photos/52/17/17--01042023-01-IMG_1057.jpg",
+            "https://medias.digitalgarage.ch/photos/52/17/17--01042023-02-IMG_1059.jpg",
+          ]}
+          horizontalimg="left"
+          description="Aller chercher le soleil qui se lève sans grand espoir de le trouver. C'est l'intention qui compte, on dira."
+          note="17/52 Levers de soleil"
+        />
         <PhotoItem
           title="Les Alpettes, Semsales, 18 mars"
           date="18.03.23"

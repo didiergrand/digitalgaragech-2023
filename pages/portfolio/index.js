@@ -1,5 +1,6 @@
 import Layout from "@component/components/Layout";
 import PortfolioItem from "../../components/PortfolioItem";
+import Clients from "@component/components/Clients";
 
 // get data from json file
 const portfolioData = require("../../data/portfolioData.json");
@@ -9,7 +10,10 @@ const Portfolio = () => {
   return (
     <Layout>
       <section className="max-w-7xl mx-auto p-6 pb-0 pt-12">
-        <h2>Web</h2>
+        <Clients />
+      </section>
+      <section className="max-w-7xl mx-auto p-6 pb-0 pt-12">
+        <h3 className="mt-20 sm:mb-10">Dernières réalisations</h3>
         <div className="grid grid-cols-12 gap-4">
           <div className="col-start-1 col-end-10 lg:col-end-9 pt-8 pb-8">
             <p>Je vous invite à découvrir une sélection de mes travaux personnels en développement front-end et web design.</p>
@@ -18,7 +22,6 @@ const Portfolio = () => {
             <p>Vous avez un projet web qui vous tient à cœur? <a href="mailto:contact@digitalgarage.ch">N'hésitez pas à me contacter</a> pour en discuter et voir comment je peux vous aider à le concrétiser.</p>
           </div>
         </div>
-        <h3 className="mt-20 sm:mb-10">Dernières réalisations</h3>
       </section>
       {/* Loop json content */}
       {sortedData.map((item) => (
