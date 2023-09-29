@@ -23,16 +23,19 @@ const PhotoGallery = () => {
 
        
         <PhotoItem
-          title="Les Alpettes, 5 mars"
-          date="18.03.23"
+          title="Niremont, 27 mai"
+          date="27.05.23"
           images={[
-            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-01-243A7432.jpg",
-            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-02-243A7458.jpg", // right grande image
-            "https://medias.digitalgarage.ch/photos/52/16/16--19032023-03-243A7485.jpg",
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-01-243A9901.jpg",
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-04-243A0040.jpg",
+            "https://medias.digitalgarage.ch/photos/52/25/25-27052023-02-243A9955.jpg", // right grande image
           ]}
-          description="Le printemps se pointe, apportant avec lui de nouveaux horizons colorés. 🌄 Re-balade vers les Alpettes."
-          note="16/52 Levers de soleil"
+          horizontalimg="top"
+          description="Un pti Niremont pour le plaisir, toujours calmos avec ma cheville 🚶‍♂<br />
+          Bonne semaine à tous !"
+          note="25/52 Levers de soleil"
         />
+        
       </div>
     </section>
   );
