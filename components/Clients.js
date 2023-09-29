@@ -29,7 +29,7 @@ const Clients = () => {
       <h3 className="mt-20 sm:mb-10">Ils me font confiance</h3>
       <div className="grid grid-cols-12 gap-4">
         <div className="col-start-1 col-end-10 lg:col-end-9 pt-8 pb-8">
-          <p>J'ai le privilège de collaborer avec de plusieurs communes de la Veveyse, des organisations à but non lucratif et diverses entreprises, chacune avec ses défis uniques et des visions distinctes. Je les accompagne également dans la maintenance de leur site web, garantissant ainsi une présence en ligne sécurisée et à jour. De nombreux autres clients m’ont également fait confiance pour renforcer leur présence en ligne et valoriser leur expertise. </p>
+          <p>J'ai le privilège de collaborer avec plusieurs communes de la Veveyse, des organisations à but non lucratif et diverses entreprises, chacune avec ses défis uniques et des visions distinctes. Je les accompagne également dans la maintenance de leur site web, garantissant ainsi une présence en ligne sécurisée et à jour. De nombreux autres clients m’ont également fait confiance pour renforcer leur présence en ligne et valoriser leur expertise. </p>
           <p>Chaque réalisation est le reflet d’une belle collaboration et je suis fier de les mettre en avant ici.</p>
         </div>
       </div>
