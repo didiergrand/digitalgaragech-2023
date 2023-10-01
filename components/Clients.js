@@ -24,7 +24,7 @@ import Giller from "../public/logos/David-Giller-Manuiserie-Charpente.png";
 const Clients = () => {
   return (
     <>
-    <section className="welcome max-w-7xl mx-auto flex flex-col justify-center align-middle">
+    <section className="welcome max-w-7xl mx-auto flex flex-col justify-center align-middle p-6">
         <h2>Web</h2>
       <h3 className="mt-20 sm:mb-10">Ils me font confiance</h3>
       <div className="grid grid-cols-12 gap-4">
@@ -34,7 +34,7 @@ const Clients = () => {
         </div>
       </div>
       <h2 className="text-2xl font-bold mb-6">Communes</h2>
-      <div className="grid grid-cols-3 gap-20 mb-20 bg-white p-10 rounded-md">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-20 mb-20 bg-white md:p-10 rounded-md">
         <a href="https://www.semsales.ch" target="_blank" class="flex justify-center items-center">
           <Image
             src={Semsales}
@@ -91,7 +91,7 @@ const Clients = () => {
         </a>
       </div>
       <h2 className="text-2xl font-bold mb-6">Manifestations</h2>
-      <div className="grid grid-cols-3 gap-20 mb-20 bg-white p-10 rounded-md">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-20 mb-20 bg-white md:p-10 rounded-md">
         <a href="https://www.comptoir-veveyse.ch" target="_blank" class="flex justify-center items-center">
           <Image
             src={Comptoir}
@@ -134,7 +134,7 @@ const Clients = () => {
             height={400}
           />
         </a>
-        <a href="https://www.semsales2020.ch" target="_blank" class="flex justify-center items-center p-10">
+        <a href="https://www.semsales2020.ch" target="_blank" class="flex justify-center items-center md:p-10">
           <Image
             src={Arbra}
             className=""
@@ -145,7 +145,7 @@ const Clients = () => {
         </a>
       </div>
       <h1 className="text-2xl font-bold mb-6">Entreprises</h1>
-      <div className="grid grid-cols-3 gap-20 mb-20 bg-white p-10 rounded-md">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-20 mb-20 bg-white md:p-10 rounded-md">
         <a href="https://www.etude-mooser.ch" target="_blank" class="flex justify-center items-center p-12">
           <Image
             src={Mooser}
