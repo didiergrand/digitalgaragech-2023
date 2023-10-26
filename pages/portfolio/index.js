@@ -40,7 +40,7 @@ const Portfolio = () => {
   );
 };
 Portfolio.getInitialProps = () => {
-  return { title: "Création de sites internet en Veveyse et dans le canton de Fribourg" , 
+  return { title: "Création de sites web à Châtel-St-Denis et région." , 
   description: "Création de sites internet personnalisés, refonte et maintenance. Particulièrement actif pour la création de sites web à Châtel-St-Denis, et dans la région. Les communes de Semsales, Saint-Martin, Attalens, Bossonnens et Granges Veveyse m'on mandatés pour la création de leur site internet et continuent à me faire confiance pour la maintanance. Je réalise aussi régulièrement des sites pour les girons de Musiques et de Jeunesse. Je réalise également des sites web pour des PME qui me sollicitent pour la création de leur site web." };
 };
 export default Portfolio;
