@@ -144,8 +144,8 @@ const Header = () => {
             Photo
           </Link>
           <Link
-            href="/blog"
-            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 ${router.pathname.startsWith("/blog") ? "active" : ""}`}
+            href="https://blog.digitalgarage.ch"
+            className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7`}
           >
             Blog
           </Link>
