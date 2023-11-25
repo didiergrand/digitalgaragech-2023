@@ -8,7 +8,7 @@ import LatestBlogs from "@component/components/LatestBlogs";
 
 const fetchPosts = async () => {
   try {
-    const res = await fetch('https://admin.digitalgarage.ch/wp-json/wp/v2/posts');
+    const res = await fetch('https://blog.digitalgarage.ch/wp-json/wp/v2/posts');
     const responseData = await res.json();
     return responseData;
   } catch (error) {

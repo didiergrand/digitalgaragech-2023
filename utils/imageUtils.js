@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchImage = async (imageId) => {
   try {
     const response = await axios.get(
-      `https://admin.digitalgarage.ch/wp-json/wp/v2/media/${imageId}`
+      `https://blog.digitalgarage.ch/wp-json/wp/v2/media/${imageId}`
     );
     const imageDetails = response.data;
     return imageDetails.source_url;

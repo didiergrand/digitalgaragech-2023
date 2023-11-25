@@ -12,7 +12,7 @@ const Blog = props => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await fetch('https://admin.digitalgarage.ch/wp-json/wp/v2/posts')
+      const res = await fetch('https://blog.digitalgarage.ch/wp-json/wp/v2/posts')
       const data = await res.json();
       setPosts(data);
     }

@@ -67,7 +67,7 @@ export async function getServerSideProps(context) {
   const { slug } = context.params;
 
   const res = await fetch(
-    `https://admin.digitalgarage.ch/wp-json/wp/v2/posts?slug=${slug}`
+    `https://blog.digitalgarage.ch/wp-json/wp/v2/posts?slug=${slug}`
   );
 
   const posts = await res.json();
@@ -77,7 +77,7 @@ export async function getServerSideProps(context) {
   const categoryId = currentPost?.categories[0];
 
   const similarPostsRes = await fetch(
-    `https://admin.digitalgarage.ch/wp-json/wp/v2/posts?per_page=3&orderby=date&order=asc&status=publish&categories=${categoryId}&exclude=${currentPost.id}`
+    `https://blog.digitalgarage.ch/wp-json/wp/v2/posts?per_page=3&orderby=date&order=asc&status=publish&categories=${categoryId}&exclude=${currentPost.id}`
   );
   const similarPosts = await similarPostsRes.json();
   return {
