@@ -10,7 +10,7 @@ const About = () => {
             <div className="sm:grid grid-cols-12 gap-4">
             <div className="col-start-1 sm:col-end-10 lg:col-end-8 pt-8 pb-8">
             <p>Je vous invite à découvrir mon univers où cohabitent passion, projets professionnels et personnels. Actuellement développeur front-end chez SCOTT Sports, je réalise également des projets personnels et propose mes services aux entreprises et organisations qui cherchent à créer ou améliorer leur présence en ligne.</p>
-            <p>En complément de mes activités de web designer et développeur, j'ai récemment élargi mon spectre de compétences en me lançant dans la rédaction de blogs axés sur la création de sites web, le design et les réseaux sociaux dans le but d'aider chacun à optimiser sa présence sur le web.</p>
+            <p>En complément de mes activités de web designer et développeur, je suis actuellement une formation de Digital Project Manager. Cette formation me permet d'acquérir des compétences en gestion de projet, en marketing digital et en stratégie de communication.</p>
             <p>Amateur de photographie, je continue à publier mes clichés sur ce site, offrant ainsi un aperçu complet de mes compétences et de ma créativité.</p>
             <p>Je crois que chaque site web est unique, comme chaque entreprise ou société. Si un projet web vous tient à cœur, n'hésitez pas à me contacter pour en discuter et voir comment je peux vous aider à le concrétiser.</p>
             <p>Je vous souhaite une bonne visite sur mon site.</p>
